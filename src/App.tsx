@@ -167,8 +167,8 @@ export default function App() {
           </section>
         </div>
 
-        <footer className="mt-10 text-xs text-slate-700/60">
-          © {new Date().getFullYear()} KopiKita • Nur Azhim Ramadhan 2026
+        <footer className="mt-10 w-full py-6 text-center text-black/75">
+      © {new Date().getFullYear()} KopiKita • Nur Azhim Ramadhan 2026
         </footer>
       </div>
     </div>
