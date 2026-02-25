@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --bg-0: #ffffff;
+  --bg-1: #fbf7f0;
+  --bg-2: #f3efe8;
+  --panel: rgba(255, 255, 255, 0.72);
+  --border: rgba(24, 24, 27, 0.10);
+  --shadow: rgba(24, 24, 27, 0.10);
+  --espresso: #3b2314;
+  --gold: #f7c948;
+}
+
+html,
+body {
+  height: 100%;
+  background:
+    radial-gradient(900px 650px at 18% 8%, rgba(247, 201, 72, 0.22), transparent 55%),
+    radial-gradient(1000px 700px at 92% 0%, rgba(59, 35, 20, 0.12), transparent 60%),
+    linear-gradient(180deg, var(--bg-0) 0%, var(--bg-1) 35%, var(--bg-2) 100%);
+  color: #0f172a;
+}
+
+.glass {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+
+.glow {
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.6) inset,
+    0 14px 40px rgba(24, 24, 27, 0.10),
+    0 0 0 1px rgba(24, 24, 27, 0.06);
+}
+
+.ai-badge {
+  box-shadow:
+    0 0 0 1px rgba(247, 201, 72, 0.22),
+    0 12px 30px rgba(247, 201, 72, 0.18);
+}
+
+.blink {
+  animation: blinkPulse 1.6s ease-in-out infinite;
+}
+
+@keyframes blinkPulse {
+  0% { opacity: 0.55; }
+  50% { opacity: 1; }
+  100% { opacity: 0.55; }
+}
